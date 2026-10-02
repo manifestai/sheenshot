@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Sheenshot</title>
+        <item>
+            <title>0.18</title>
+            <pubDate>Fri, 02 Oct 2026 19:21:29 -0300</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>0.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-0.18-24.dmg" length="5271596" type="application/octet-stream" sparkle:edSignature="em7zGK9duQBpuI257405Ib4YX2QMKpCOJhsu1wDjnZ3psgtyDuxRk1RYresBhrXYfL6dqGXcZ3aCLwPDGi8qAw=="/>
+        </item>
+        <item>
+            <title>0.17</title>
+            <pubDate>Fri, 02 Oct 2026 19:13:42 -0300</pubDate>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>0.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-0.17-23.dmg" length="5272603" type="application/octet-stream" sparkle:edSignature="B5FRkIRimH+eTfcTEEFZV+OhRwdlrCU+OSRp1yXi+4acjJHyox0tcXU81cdKgHP6hMXQWRavZr48eNwDGN+cBA=="/>
+        </item>
+    </channel>
+</rss>

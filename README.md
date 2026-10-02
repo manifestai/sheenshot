@@ -16,9 +16,20 @@ Site estático (HTML + CSS), em português e inglês.
 3. Framework preset: None · Build command: vazio · Build output directory: `/`.
 4. Save and Deploy. Cada `git push` publica de novo.
 
-## Atualizar o DMG
+## Publicar uma versão nova do app
 
-1. Gere o DMG: `bash scripts/gerar-dmg.sh gratis` no projeto do app.
-2. Copie `build/Sheenshot-<versão>-gratis.dmg` para `downloads/Sheenshot-gratis.dmg` (mesmo nome, para os links continuarem valendo).
-3. Atualize o tamanho do DMG em `pt/index.html` e `en/index.html`.
-4. Crie um Release novo no GitHub e anexe o DMG.
+O app (DMG grátis) procura versões novas em `/atualizacoes/appcast.xml` e se atualiza sozinho.
+
+1. No projeto do app, suba a versão no Xcode (alvo Sheenshot › General › Version, por exemplo 0.18).
+2. Opcional: escreva as novidades em `scripts/novidades/0.18.html` (aparecem na janela de atualização).
+3. Gere o DMG: `bash scripts/gerar-dmg.sh gratis`. O script copia sozinho para esta pasta:
+   - `downloads/Sheenshot-gratis.dmg` (o botão do site, mesmo endereço de sempre)
+   - `downloads/Sheenshot-<versão>-<build>.dmg` (as 3 versões mais novas, usadas pela atualização)
+   - `atualizacoes/appcast.xml` (a lista de versões que o app consulta)
+   - o tamanho do DMG em `pt/index.html` e `en/index.html`
+4. Publique: `git add -A && git commit -m "Sheenshot 0.18" && git push`.
+5. Opcional: crie um Release no GitHub e anexe o DMG.
+
+Quem já tem o Sheenshot recebe o aviso no menu em até 1 dia, ou na hora em Ajustes › Atualizações › Procurar agora.
+
+Nunca publique a pasta `Chaves/` do projeto do app nem o DMG `completo`.

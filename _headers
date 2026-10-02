@@ -3,6 +3,10 @@
   Content-Disposition: attachment
   Cache-Control: public, max-age=300
 
+/atualizacoes/*
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: no-cache
+
 /assets/*
   Cache-Control: public, max-age=86400
 
