@@ -3,6 +3,14 @@
     <channel>
         <title>Sheenshot</title>
         <item>
+            <title>0.19</title>
+            <pubDate>Fri, 02 Oct 2026 22:08:47 -0300</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>0.19</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-0.19-26.dmg" length="5502640" type="application/octet-stream" sparkle:edSignature="3w0GEiO8nwJR1aVNbn2S0MvLqy232W46srk09XA8+Bq4kBayKrCnW0guTs7lQhnbp9pWofktxU1qtzT2YjVhDw=="/>
+        </item>
+        <item>
             <title>0.18</title>
             <pubDate>Fri, 02 Oct 2026 19:21:29 -0300</pubDate>
             <sparkle:version>24</sparkle:version>
