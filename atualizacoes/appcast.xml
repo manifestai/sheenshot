@@ -3,6 +3,24 @@
     <channel>
         <title>Sheenshot</title>
         <item>
+            <title>1.0.2</title>
+            <pubDate>Sat, 07 Nov 2026 14:35:25 -0300</pubDate>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://sheenshot.pages.dev/atualizacoes/Sheenshot-1.0.2-36.html</sparkle:releaseNotesLink>
+            <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-1.0.2-36.dmg" length="6689718" type="application/octet-stream" sparkle:edSignature="PO9bY5LiOW9/NJ96X+Zb3tGtH+sugg86JHjDu9sweVfketFTaq6KooMeT/aWX97di1TR+VSXcKiB7/Ce9udTDg=="/>
+        </item>
+        <item>
+            <title>1.0.2</title>
+            <pubDate>Sat, 07 Nov 2026 14:28:36 -0300</pubDate>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://sheenshot.pages.dev/atualizacoes/Sheenshot-1.0.2-34.html</sparkle:releaseNotesLink>
+            <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-1.0.2-34.dmg" length="6689684" type="application/octet-stream" sparkle:edSignature="5AxL8QhA6A5yFSOlQ3t9RXzn/9FRig7qn0BySW8c/gwN5DVoZ05Kd6+W1jpcabum6HLx16iSCtRNOMzOA1gLAg=="/>
+        </item>
+        <item>
             <title>1.0.1</title>
             <pubDate>Sat, 03 Oct 2026 02:26:17 -0300</pubDate>
             <sparkle:version>32</sparkle:version>
@@ -10,23 +28,6 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://sheenshot.pages.dev/atualizacoes/Sheenshot-1.0.1-32.html</sparkle:releaseNotesLink>
             <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-1.0.1-32.dmg" length="6679150" type="application/octet-stream" sparkle:edSignature="rx5hyGJ+rhq0mq+6GzuQ53B9Ad8qGVVYR0JjPTFFutTS11bI5GyPjlJC0kNQnndQXf2AhKKJkQGMByDLmlc0Dg=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Sat, 03 Oct 2026 00:25:29 -0300</pubDate>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://sheenshot.pages.dev/atualizacoes/Sheenshot-1.0-27.html</sparkle:releaseNotesLink>
-            <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-1.0-27.dmg" length="6500430" type="application/octet-stream" sparkle:edSignature="QIi1oOjJ7Czk8XwsoalsoEwIzRGSYDa+q6eIfW2xgrFgMQ9hAugQve40xSZDc+20OxvjB485n3kLq0TNpqxTBg=="/>
-        </item>
-        <item>
-            <title>0.19</title>
-            <pubDate>Fri, 02 Oct 2026 22:08:47 -0300</pubDate>
-            <sparkle:version>26</sparkle:version>
-            <sparkle:shortVersionString>0.19</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://sheenshot.pages.dev/downloads/Sheenshot-0.19-26.dmg" length="5502640" type="application/octet-stream" sparkle:edSignature="3w0GEiO8nwJR1aVNbn2S0MvLqy232W46srk09XA8+Bq4kBayKrCnW0guTs7lQhnbp9pWofktxU1qtzT2YjVhDw=="/>
         </item>
     </channel>
 </rss>
