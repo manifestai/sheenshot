@@ -12,6 +12,16 @@ Site estático (HTML + CSS), em português e inglês.
 - `/downloads/Sheenshot-gratis.dmg` — DMG com tudo liberado por 30 dias; depois vira a versão grátis
 - Formulários do Tally: lista de espera `D4gGRN` (PT) e `ODONxY` (EN); suporte `rjzZ82` (PT) e `ZjqBbe` (EN)
 
+## Contador de downloads (`functions/`)
+
+Funções do Cloudflare Pages com um banco D1 ligado como `DB`.
+
+- `functions/downloads/[arquivo].js` entrega o DMG e soma +1: `Sheenshot-gratis.dmg` (e DMGs com versão baixados pelo navegador) contam como **instalação**; DMGs com versão baixados pelo atualizador (Sparkle) contam como **atualização**. Robôs, pedidos que não são GET e retomadas de download não contam. Sem o banco ligado, o download funciona normalmente e só não conta.
+- `functions/api/downloads.js` responde `{ publico: true, total }` a partir de **500 instalações**; antes disso, só `{ publico: false }`. O `assets/site.js` lê esse endereço e mostra " · 1.240 downloads" na linha pequena abaixo do botão.
+- `functions/api/painel.js` mostra os números completos, com senha (segredo `PAINEL_SENHA`): `https://sheenshot.pages.dev/api/painel`.
+- Os downloads pelo GitHub Releases não passam por aqui e não contam.
+- O `_headers` não vale para respostas de funções; os cabeçalhos do DMG ficam na própria função.
+
 ## Ferramentas (`assets/tools.js`)
 
 JavaScript puro, sem bibliotecas. Nada é enviado: as imagens são lidas e desenhadas no próprio navegador. O mesmo código monta a versão compacta (na página principal) e a completa (na página da ferramenta), pelo atributo `data-tool`. A comparação de tamanho do Copiar para IA, na página principal, é só HTML e CSS (`.ai-size`), sem JavaScript.

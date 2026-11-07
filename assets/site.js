@@ -43,4 +43,17 @@
       if (steps) setTimeout(function () { steps.scrollIntoView({ behavior: "smooth" }); }, 600);
     });
   });
+  // Contador de downloads: só aparece quando /api/downloads diz que já é público (500 ou mais).
+  var contadores = document.querySelectorAll("[data-downloads]");
+  if (contadores.length && window.fetch) {
+    fetch("/api/downloads").then(function (r) { return r.json(); }).then(function (dados) {
+      if (!dados || !dados.publico || !dados.total) return;
+      var idioma = document.documentElement.lang || "en";
+      var numero = Number(dados.total).toLocaleString(idioma);
+      contadores.forEach(function (el) {
+        el.textContent = " · " + numero + " downloads";
+        el.hidden = false;
+      });
+    }).catch(function () {});
+  }
 })();
